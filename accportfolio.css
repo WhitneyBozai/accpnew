@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Cochin", serif;
+    line-height: 1.6;
+    background: url('home.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    
+  }
+  
+  /* Grid */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "section"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  
+  header {
+    grid-area: header;
+    background-color: #733828; 
+    color: white;             
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  
+  nav {
+    grid-area: nav;
+    background-color: #8b5e3c; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;  
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: orange;  /* Mouse on it */
+  }
+  
+  
+  section {
+    grid-area: section;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(252, 250, 249);
+    margin: 20px auto;
+    max-width: 900px;      
+    border-radius: 8px;    
+    box-shadow: 0 4px 8px rgba(37, 18, 18, 0.1);
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;  
+    }
+  
+    nav ul {
+      flex-direction: column;  /* 垂直排列导航菜单 */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* 垂直排列时增加间距 */
+    }
+  
+    section {
+      padding: 20px;
+      margin: 10px;
+    }
+  }
+  

@@ -1,0 +1,122 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Cochin", serif; 
+    line-height: 1.6;
+    background: url('about.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background: url('paper.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px; /* Space below the header */
+    border-radius: 8px;  /* Rounded corners for a smooth look */
+}
+
+header h1 {
+    font-size: 76px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.button-container {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding on the left and right */
+  }
+  
+  .btn {
+    background-color: #1c7946;
+    color:  rgb(246, 251, 203);;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(5, 91, 65, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #095035; /* Darker background on hover */
+  }
+
+/* Section Styling */
+section {
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading 2 Styling */
+section h2 {
+    font-size: 28px;
+    color: #2e3a59;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Heading 3 Styling */
+section h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* Link Styling */
+a {
+    color: #2e3a59;  /* Same color as header for consistency */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* Smaller font for smaller screens */
+    }
+
+    section h2 {
+        font-size: 24px; 
+    }
+
+    section h3 {
+        font-size: 20px; 
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}
